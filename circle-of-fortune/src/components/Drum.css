@@ -1,0 +1,200 @@
+.wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.wheel {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    transition: transform 3s ease-in-out;
+}
+.arrow {
+    z-index: 100;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+    margin-top: -12px;
+}
+
+.sector {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  transform-origin: 0% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  backface-visibility: hidden; 
+}
+
+
+.text {
+    transform: translateY(50%); 
+    text-align: center;
+    writing-mode: vertical-rl; 
+    font-weight: bold; 
+}
+
+
+
+
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    transition: transform 3s ease-in-out;
+}
+
+
+.spin {
+    margin-top: 40px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .spin:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-spin 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-spin {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .spin:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+.result {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.rotating {
+    transition: all 3s;
+}
+
+.value {
+    position: absolute; 
+    top: 10%; 
+    left: 20%;
+    transform: translateX(-50%) rotate(90deg);
+    font-weight: bold; 
+    color: white;
+}
+
+.sector-1 {
+
+    z-index: 1;
+}
+
+.sector-2 {
+
+    z-index: 2;
+}
+.sector-3 {
+
+    z-index: 3;
+}
+.sector-4 {
+
+    z-index: 4;
+}
+.sector-5 {
+
+    z-index: 5;
+}
+.sector-6 {
+
+    z-index: 6;
+}
+.sector-7 {
+
+    z-index: 7;
+}
+.sector-8 {
+
+    z-index: 8;
+}
+.sector-9 {
+
+    z-index: 9;
+}
+.sector-10 {
+
+    z-index: 10;
+}
+.sector-11 {
+
+    z-index: 11;
+}
+.sector-12 {
+
+    z-index: 12;
+    background: red !important;
+}
+

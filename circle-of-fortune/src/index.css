@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: backgroundAnimation 5s infinite;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes backgroundAnimation {
+  0% { background-color: rgba(252, 168, 52, 1); }
+  50% { background-color: rgba(100, 150, 255, 1); }
+  100% { background-color: rgba(252, 168, 52, 1); }
+}
+
+
